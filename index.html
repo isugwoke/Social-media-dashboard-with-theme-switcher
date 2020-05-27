@@ -5,83 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <div class="header__text">
+        <h1 class="heading-main">Social Media Dashboard</h1>
+        <h3 class="heading-sub">Total Followers: 23,004</h3>
+      </div>
+      <div class="theme_switch_wrapper">
+        <div class="theme-mode">Dark Mode</div>
+        <input type="checkbox" name="" id="checkbox">
+        <label for="checkbox" class="toggle">
+          <div class="toggle__slider"></div>
+        </label>
+      </div>
+    </header>
+    <div class="followers">
+      <div class="card card__followers">
+        <div class="social">
+          <svg class="social__icon">
+            <use xlink:href="imgs/sprite.svg#icon-facebook"/>
+          </svg>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+          <div class="social__username">@nathanf</div>
+        </div>
+        <div class="followers__count">
+          1987
+          <span>Followers</span>
+        </div>
+        <div class="daily-change">
+          <svg class="icon-up">
+            <use xlink:href="imgs/sprite.svg#icon-up" />
+          </svg>
+          <div class="daily-change__count">
+            12 Today
+          </div>
+        </div>
+      </div>
+      <div class="card card__followers">
+        <div class="social">
+          <svg class="social__icon">
+            <use xlink:href="imgs/sprite.svg#icon-twitter" />
+          </svg>
+          <div class="social__username">@nathanf</div>
+        </div>
+        <div class="followers__count">
+          1044
+          <span>Followers</span>
+        </div>
+        <div class="daily-change">
+          <svg class="icon-up">
+            <use xlink:href="imgs/sprite.svg#icon-up" />
+          </svg>
+          <div class="daily-change__count">99 Today</div>
+        </div>
+      </div>
+      <div class="card card__followers">
+        <div class="social">
+          <svg class="social__icon">
+            <use xlink:href="imgs/sprite.svg#icon-instagram" />
+          </svg>
+          <div class="social__username">@realnathanf</div>
+        </div>
+        <div class="followers__count">11k<span>Followers</span>
+        </div>
+        <div class="daily-change">
+          <svg class="icon-up">
+            <use xlink:href="imgs/sprite.svg#icon-up" />
+          </svg>
+          <div class="daily-change__count">1099 Today</div>
+        </div>
+      </div>
+      <div class="card card__followers">
+        <div class="social">
+          <svg class="social__icon">
+            <use xlink:href="imgs/sprite.svg#icon-youtube" />
+          </svg>
+          <div class="social__username">Nathan F.</div>
+        </div>
+        <div class="followers__count">8239<span>Subrcribers</span>
+        </div>
+        <div class="daily-change">
+          <svg class="icon-down">
+            <use xlink:href="imgs/sprite.svg#icon-down" />
+          </svg>
+          <div class="daily-change__count">144 Today</div>
+        </div>
+      </div>
+    </div>
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="interactions">
+      <h2 class="heading-secondary">Overview - Today</h2>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Page Views</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-facebook" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">87</div>
+          <div class="daily-change">
+            <svg class="icon-up">
+              <use xlink:href="imgs/sprite.svg#icon-up" />
+            </svg>
+            <div class="daily-change__count">3&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Likes</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-facebook" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">52</div>
+          <div class="daily-change">
+            <svg class="icon-down">
+              <use xlink:href="imgs/sprite.svg#icon-down" />
+            </svg>
+            <div class="daily-change__count">2&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Likes</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-instagram" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">5462</div>
+          <div class="daily-change">
+            <svg class="icon-up">
+              <use xlink:href="imgs/sprite.svg#icon-up" />
+            </svg>
+            <div class="daily-change__count">2257&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Profile Views</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-instagram" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">52k</div>
+          <div class="daily-change">
+            <svg class="icon-up">
+              <use xlink:href="imgs/sprite.svg#icon-up" />
+            </svg>
+            <div class="daily-change__count">1375&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Retweets</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-twitter" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">117</div>
+          <div class="daily-change">
+            <svg class="icon-up">
+              <use xlink:href="imgs/sprite.svg#icon-up" />
+            </svg>
+            <div class="daily-change__count">303&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Likes</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-twitter" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">507</div>
+          <div class="daily-change">
+            <svg class="icon-up">
+              <use xlink:href="imgs/sprite.svg#icon-up" />
+            </svg>
+            <div class="daily-change__count">553&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Likes</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-youtube" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">107</div>
+          <div class="daily-change">
+            <svg class="icon-down">
+              <use xlink:href="imgs/sprite.svg#icon-down" />
+            </svg>
+            <div class="daily-change__count">19&percnt;</div>
+          </div>
+        </div>
+      <div class="card card__interactions">
+        <div class="interactions__social">
+          <div class="interactions__type">Total Views</div>
+          <svg class="interactions__social-icon">
+            <use xlink:href="imgs/sprite.svg#icon-youtube" />
+          </svg>
+        </div>
+        <div class="interactions__numbers">
+          <div class="interactions__count">1407</div>
+          <div class="daily-change">
+            <svg class="icon-down">
+              <use xlink:href="imgs/sprite.svg#icon-down" />
+            </svg>
+            <div class="daily-change__count">12&percnt;</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

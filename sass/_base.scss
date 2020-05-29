@@ -6,7 +6,9 @@
     --top-bg-color: hsl(232, 19%, 15%);
     --card-bg-color:    hsl(228, 28%, 20%);
     --text-color-accent:   hsl(228, 34%, 66%);
-    --text-color-primary: hsl(0, 0%, 100%);
+    --text-color-main: hsl(0, 0%, 100%);
+
+    --overview-text-color: hsl(0, 0%, 100%);
     --card-hover-bg-color:   hsl(228, 26%, 27%);
 
 
@@ -37,20 +39,22 @@ $bp-extra-small: 375px;
     --card-bg-color:  hsl(227, 47%, 96%);
     --text-color-accent:   hsl(228, 12%, 44%);
     --text-color-main: hsl(230, 17%, 14%);
-    --card-hover-bg-color:   hsl(228, 26%, 27%);
+
+    --card-hover-bg-color:   hsl(236, 35%, 92%);
+    --overview-text-color:   hsl(228, 12%, 44%);
+
 
     // Primary colors
-    --lime-green: hsl(163, 72%, 41%);
-    --bright-red: hsl(356, 69%, 56%);
+    // --lime-green: hsl(163, 72%, 41%);
+    // --bright-red: hsl(356, 69%, 56%);
 
-    --facebook-color: hsl(208, 92%, 53%);
-    --twitter-color: hsl(203, 89%, 53%);
-    --instagram-color: linear gradient (hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    --youtube-color: hsl(348, 97%, 39%);
+    // --facebook-color: hsl(208, 92%, 53%);
+    // --twitter-color: hsl(203, 89%, 53%);
+    // --instagram-color: linear gradient (hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    // --youtube-color: hsl(348, 97%, 39%);
 
     //Theme switcher
     --toggle-color: hsl(230, 22%, 74%);
-
 }
 
 *{
@@ -80,5 +84,5 @@ body{
     line-height: 1.4;
     
     background-color: var(--bg-color);
-    color: var(--text-color-primary);
+    color: var(--text-color-main);
 }

@@ -29,7 +29,7 @@ if(currentTheme){
         toggleSwitchSlider.style.transition = "all 0s";
 
         setTimeout(function(){
-        toggleSwitchSlider.style.transition = "all 0.2s";
+        toggleSwitchSlider.style = "";
         }, 200);
     }
 

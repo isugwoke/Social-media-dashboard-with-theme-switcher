@@ -1,0 +1,44 @@
+.top-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    background-color: var(--top-bg-color);
+    border-radius: 3rem;
+    z-index: -100;
+}
+
+.container{
+    max-width: 90rem;
+    margin: 3rem auto;
+    padding: 0 2rem 4rem 2rem;
+}
+
+.header{
+    margin-bottom: 3.5rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+    
+    }
+}
+
+.followers, .interactions{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2rem;
+
+    @media only screen and (max-width: $bp-medium){
+    grid-template-columns: repeat(2, 1fr);
+
+    }
+    @media only screen and (max-width: $bp-small){
+    grid-template-columns: 1fr;
+
+    }
+}
